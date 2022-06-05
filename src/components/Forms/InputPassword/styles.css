@@ -1,0 +1,29 @@
+.inputPassword {
+    width: 70%;
+    height: 30px;
+    border-radius: 20px;
+    min-width: 240px;
+    border: 1px solid #743A26;
+    padding: 0 10px;
+    margin-left: 9px;
+    margin-top: 0.4em;
+    font-size: 16px;
+    color: #743A26;
+    outline: none;
+    transition: all 0.3s;
+}
+.dv-inputPassword button {
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    color: #743A26;
+    margin-left: -40px;
+    line-height: 25px;
+    cursor: pointer;
+    font-weight: lighter;
+}
+
+.icon-eye {
+    line-height: 30px;
+    font-size: 1.6em;
+    vertical-align: bottom;
+}

@@ -1,0 +1,6 @@
+.checkbox label {
+    font-weight: bold;
+}
+.checkbox label input{
+    vertical-align: middle;
+}

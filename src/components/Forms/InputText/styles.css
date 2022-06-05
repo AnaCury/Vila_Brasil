@@ -1,0 +1,25 @@
+.inputText {
+    width: 70%;
+    height: 30px;
+    border-radius: 20px;
+    min-width: 240px;
+    border: 1px solid #743A26;
+    padding: 0 10px;
+    font-size: 16px;
+    color: #743A26;
+    outline: none;
+    transition: all 0.3s;
+    margin-left: 0%;
+}
+.dv-inputText button {
+    background-color: #743A26;
+    border: none;
+    border-radius: 50%;
+    width: 1.2em;
+    height: 1.2em;
+    color: white;
+    margin-left: -35px;
+    font-size: 1.1em;
+    cursor: pointer;
+    font-weight: lighter;
+}

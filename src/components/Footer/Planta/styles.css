@@ -1,0 +1,12 @@
+.planta{
+    position: fixed;
+    width: auto;
+    bottom: -20px;
+    right: -100px;
+}
+
+@media screen and (max-width: 1000px) and (max-height: 600px) {
+    .planta{
+        display: none;
+    }
+}

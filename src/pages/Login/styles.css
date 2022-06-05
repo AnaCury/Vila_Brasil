@@ -1,0 +1,60 @@
+.principal
+{
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    vertical-align: middle;
+}
+.form-title {
+    font-size: 28px;
+}
+.container
+{
+    display: flex;
+    justify-content: center;
+    vertical-align: middle;
+    margin-top: 20vh;
+}
+
+.form{
+    width: 30%;
+    min-width: 300px;
+}
+.rodape-form{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.9em;
+    width: 74%;
+    margin-left: 9%;
+    margin-top: 0.5em;
+    min-width: 270px;
+}
+.rodape-form a {
+    color: #212529;
+    font-weight: bold;
+}
+.footer{
+    display: flex;
+    width: 100%;
+    position: absolute;
+    bottom: 50px;
+}
+.detalhe {
+    position: absolute;
+}
+.detalhe1 {
+    top: 0;
+    right: 0;
+    width: 30%;
+}
+.detalhe2 {
+    top: 0;
+    left: 10px;
+    width: 25%;
+}
+.detalhe3 {
+    top: 200px;
+    left: 0;
+    width: 5%;
+}
