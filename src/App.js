@@ -1,13 +1,6 @@
-import logo from './logo.svg';
 import './App.css';
-import Login from './pages/Login';
+import Rotas from './routes/routes';
 
-function App() {
-  return (
-    <div className="App">
-      <Login />
-    </div>
-  );
-}
+const App = () => <Rotas />;
 
 export default App;

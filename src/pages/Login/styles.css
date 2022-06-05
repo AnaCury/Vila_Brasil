@@ -6,6 +6,7 @@
     vertical-align: middle;
 }
 .form-title {
+    text-align: center;
     font-size: 28px;
 }
 .container
@@ -19,6 +20,7 @@
 .form{
     width: 30%;
     min-width: 300px;
+    margin-left: 2em;
 }
 .rodape-form{
     display: flex;
@@ -26,9 +28,9 @@
     align-items: center;
     font-size: 0.9em;
     width: 74%;
-    margin-left: 9%;
     margin-top: 0.5em;
     min-width: 270px;
+    margin-left: 8%;
 }
 .rodape-form a {
     color: #212529;
