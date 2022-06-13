@@ -2,7 +2,6 @@ import React from "react";
 import "./styles.css";
 
 const InputText = (props) => {
-  
   const handleReset = () => {
     const input = document.querySelector("#input-text");
     input.value = "";
@@ -16,8 +15,14 @@ const InputText = (props) => {
         className="inputText"
         placeholder={props.placeholder}
         id="input-text"
+        value={props.value}
+        onChange={(e)=>props.change(e.target.value)}
       />
-      <button type="reset" onClick={handleReset}>&times;</button>
+      {
+        props.reset && (
+          <button type="reset" onClick={handleReset}>&times;</button>
+        )
+      }
     </div>
   );
 };

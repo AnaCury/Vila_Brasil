@@ -1,1 +1,0 @@
-// Apenas para melhorar a visualização da pasta no vscode, quando eu criar outra pasta esse arquivinho sai daqui XD

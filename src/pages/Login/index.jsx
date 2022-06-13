@@ -1,13 +1,22 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { Link } from "react-router-dom";
 import Planta from "../../components/Footer/Planta";
 import Vilas from "../../components/Footer/Vilas";
 import ButtonLogin from "../../components/Forms/ButtonLogin";
 import Checkbox from "../../components/Forms/Checkbox";
 import InputPassword from "../../components/Forms/InputPassword";
 import InputText from "../../components/Forms/InputText";
+import { LoginSvc } from "../../services/AuthService";
 import "./styles.css";
 
 const Login = () => {
+  const [email, setEmail] = React.useState("");
+  const [password, setPassword] = React.useState("");
+
+  const handleLogin = () => {
+    LoginSvc(email, password);
+  };
+
   return (
     <div className="principal">
       <img src="assets/detalhe1.png" alt="" className="detalhe detalhe1" />
@@ -15,14 +24,14 @@ const Login = () => {
       <img src="assets/detalhe3.png" alt="" className="detalhe detalhe3" />
       <div className="container">
         <div className="form">
-          <h1 className="form-title">Boas-vindas <br />ao sistema das Vilas</h1>
-          <InputText name="email" placeholder="Digite seu e-mail" />
-          <InputPassword name="senha" placeholder="Digite sua senha" />
+          <h1 className="form-title" style={{marginLeft: "-50px"}}>Boas-vindas <br />ao sistema das Vilas</h1>
+          <InputText name="email" placeholder="Digite seu e-mail" value={email} change={setEmail} reset/>
+          <InputPassword name="senha" placeholder="Digite sua senha" value={password} change={setPassword} />
           <div className="rodape-form">
             <Checkbox label="Lembrar-me" name="lembrar" />
-            <a href="#">Esqueci minha senha</a>
+            <Link to="/recuperar-senha">Esqueci minha senha</Link>
           </div>
-          <ButtonLogin />
+          <ButtonLogin onClick={handleLogin} />
         </div>
       </div>
       <div className="footer">

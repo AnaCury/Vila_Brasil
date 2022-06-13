@@ -22,6 +22,8 @@ const InputPassword = (props) => {
         className="inputPassword"
         id="input-password"
         placeholder={props.placeholder}
+        value={props.value}
+        onChange={(e)=>props.change(e.target.value)}
       />
       <button>
         <div

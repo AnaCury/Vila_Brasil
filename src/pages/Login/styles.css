@@ -16,11 +16,9 @@
     vertical-align: middle;
     margin-top: 20vh;
 }
-
 .form{
     width: 30%;
     min-width: 300px;
-    margin-left: 2em;
 }
 .rodape-form{
     display: flex;
@@ -30,7 +28,6 @@
     width: 74%;
     margin-top: 0.5em;
     min-width: 270px;
-    margin-left: 8%;
 }
 .rodape-form a {
     color: #212529;
