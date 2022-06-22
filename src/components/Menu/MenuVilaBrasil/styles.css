@@ -1,0 +1,141 @@
+.menuVilaBrasil {
+    height: 100vh;
+    box-sizing: border-box;
+    width: 25%;
+    min-width: 300px;
+    background-color: #ECD0BB;
+    border-radius: 0px 30px 30px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 20px 20px 20px 50px;
+}
+
+.pai-parte-superior {
+    width: 100%;
+    background-color: #FCF9F4;
+    margin-right: -20px;
+}
+.parte-superior {
+    padding-bottom: 3vh;
+    background-color: #ECD0BB;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.foto-perfil {
+    width: 15vh;
+    height: 15vh;
+    border-radius: 5em;
+    background-color: #BBB;
+    border: 4px #FFEED9 solid;
+}
+
+.nome-pessoa {
+    font-family: sans-serif;
+    margin-bottom: 0px;
+}
+
+.email {
+    margin-top: 10px;
+    font-family: sans-serif;
+    font-weight: 500;
+}
+.contador h4 {
+    text-align: left;
+    margin: 20px;
+}
+.contador {
+    width: 100%;
+}
+.registradas {
+    width: 50%;
+    border-right: 2px solid #000;
+}
+.confirmadas {
+    width: 50%;
+}
+h5 {
+    margin: 0;
+}
+.info-icon{
+    vertical-align: middle;
+    font-size: 1em;
+}
+.quadro-contador {
+    display: flex;
+}
+.qtd {
+    text-align: center;
+}
+.lista-menu {
+    background-color: #FCF9F4;
+    margin-right: -20px;
+}
+.menu-item{
+    background-color: #ECD0BB;
+    cursor: pointer;
+}
+.menu-item h3 {
+    font-family: sans-serif;
+    padding: 5px 4vh;
+    margin: 0px;
+}
+.menu-item h3:hover {
+    color: #FCF9F4;
+}
+.menu-item-selected h3:hover {
+    color: #ECD0BB;
+}
+.menu-item-selected h3{
+    width: 100%;
+    background-color: #FCF9F4;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 15px 0px 0px 15px;
+}
+.pre-menu-item {
+    border-radius: 0px 0px 15px 0px;
+}
+.pos-menu-item{
+    border-radius: 0px 15px 0px 0px;
+}
+.pai-parte-inferior {
+    width: 100%;
+    background-color: #FCF9F4;
+    margin-right: -20px;
+}
+.parte-inferior {
+    padding-top: 4vh;
+    width: 100%;
+    background-color: #ECD0BB;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.parte-inferior img {
+    width: 70%;
+}
+.btn-sair {
+    width: 50%;
+    margin-left: 9%;
+    background-color: rgba(0, 0, 0, 0.085);
+    border-radius: 15px;
+    padding: 5px;
+    margin-top: 1vh;
+}
+
+@media (min-height: 700px) {
+    .parte-inferior {
+        padding-top: 10vh;
+    }
+    .parte-superior {
+        padding-bottom: 5vh;
+    }
+    .menu-item h3{
+        padding: 5px 20px;
+    }
+}

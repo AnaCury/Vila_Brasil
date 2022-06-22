@@ -1,20 +1,27 @@
 import React, { useEffect } from "react";
-import { Link } from "react-router-dom";
+import { Link, Navigate, useNavigate } from "react-router-dom";
 import Planta from "../../components/Footer/Planta";
 import Vilas from "../../components/Footer/Vilas";
 import ButtonLogin from "../../components/Forms/ButtonLogin";
 import Checkbox from "../../components/Forms/Checkbox";
 import InputPassword from "../../components/Forms/InputPassword";
 import InputText from "../../components/Forms/InputText";
-import { LoginSvc } from "../../services/AuthService";
+import { isAuthenticated, LoginSvc } from "../../services/AuthService";
 import "./styles.css";
 
 const Login = () => {
   const [email, setEmail] = React.useState("");
   const [password, setPassword] = React.useState("");
+  const navigate = useNavigate();
 
   const handleLogin = () => {
     LoginSvc(email, password);
+    // verificar se autenticou
+    // se autenticou, redirecionar para /registrar-aula
+    if(isAuthenticated()) {
+      console.log("autenticou");
+      navigate("/registrar-aula");
+    }
   };
 
   return (

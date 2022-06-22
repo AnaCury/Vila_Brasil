@@ -22,6 +22,7 @@
     border-radius: 5%;
     box-shadow: 3px 3px 3px rgb(197, 197, 197);
     width: 30%;
+    min-width: 300px;
     padding: 3em 1em;
 }
 .img-rec-senha {
