@@ -10,7 +10,7 @@ const RegistrarAula = () => {
     }
     return (
         <div className="registrar-aula">
-            <MenuVilaBrasil />
+            <MenuVilaBrasil aux={1} />
         </div>
     );
 }
