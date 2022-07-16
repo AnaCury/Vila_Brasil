@@ -4,37 +4,28 @@ import { useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import "./styles.css";
 
-const MenuVilaBrasil = (props) => {
+const MenuVilaInternacional = (props) => {
   const [nome, setNome] = useState("");
   const [email, setEmail] = useState("");
   const [registradas, setRegistradas] = useState("");
   const [confirmadas, setConfirmadas] = useState("");
 
   const handleMenu = (aux) => {
-    const parteSuperior = document.querySelector(".parte-superior");
+    const parteSuperior = document.querySelector(".parte-superior-int");
     const registrarAula = document.querySelector("#registrar-aula");
     const estudantes = document.querySelector("#estudantes");
-    const financeiro = document.querySelector("#financeiro");
-    const parteInferior = document.querySelector(".parte-inferior");
+    const parteInferior = document.querySelector(".parte-inferior-int");
 
     if (aux === 1) {
-      parteSuperior.classList = "parte-superior pre-menu-item";
-      registrarAula.classList = "menu-item menu-item-selected";
-      estudantes.classList = "menu-item pos-menu-item";
-      financeiro.classList = "menu-item";
-      parteInferior.classList = "parte-inferior";
+      parteSuperior.classList = "parte-superior-int pre-menu-item";
+      registrarAula.classList = "menu-item-int menu-item-selected-int";
+      estudantes.classList = "menu-item-int pos-menu-item";
+      parteInferior.classList = "parte-inferior-int";
     } else if (aux === 2) {
-      parteSuperior.classList = "parte-superior";
-      registrarAula.classList = "menu-item pre-menu-item";
-      estudantes.classList = "menu-item menu-item-selected";
-      financeiro.classList = "menu-item pos-menu-item";
-      parteInferior.classList = "parte-inferior";
-    } else if (aux === 3) {
-      parteSuperior.classList = "parte-superior";
-      registrarAula.classList = "menu-item";
-      estudantes.classList = "menu-item pre-menu-item";
-      financeiro.classList = "menu-item menu-item-selected";
-      parteInferior.classList = "parte-inferior pos-menu-item";
+      parteSuperior.classList = "parte-superior-int";
+      registrarAula.classList = "menu-item-int pre-menu-item";
+      estudantes.classList = "menu-item-int menu-item-selected-int";
+      parteInferior.classList = "parte-inferior-int pos-menu-item";
     }
   };
 
@@ -61,18 +52,18 @@ const MenuVilaBrasil = (props) => {
   });
 
   return (
-    <div className="menuVilaBrasil">
-      <div className="pai-parte-superior">
-        <div className="parte-superior" id="parte-superior">
-          <div className="foto-perfil"></div>
-          <h3 className="nome-pessoa">{nome}</h3>
-          <h4 className="email">{email}</h4>
-          <div className="contador">
+    <div className="menuVilaInternacional">
+      <div className="pai-parte-superior-int">
+        <div className="parte-superior-int" id="parte-superior">
+          <div className="foto-perfil-int"></div>
+          <h3 className="nome-pessoa-int">{nome}</h3>
+          <h4 className="email-int">{email}</h4>
+          <div className="contador-int">
             <h4>
               Contador{" "}
               <span className="material-icons info-icon">info_outline</span>
             </h4>
-            <div className="quadro-contador">
+            <div className="quadro-contador-int">
               <div className="registradas">
                 <h5 className="qtd">{registradas}</h5>
                 <p className="qtd">Registradas</p>
@@ -87,12 +78,12 @@ const MenuVilaBrasil = (props) => {
       </div>
       <div className="lista-menu" id="lista-menu">
         <div
-          className="menu-item"
+          className="menu-item-int"
           id="registrar-aula"
           onClick={() => handleMenu(1)}
         >
           <Link
-            className="link-menu"
+            className="link-menu-int"
             to="/registrar-aula"
             onClick={() => handleMenu(1)}
           >
@@ -105,36 +96,23 @@ const MenuVilaBrasil = (props) => {
           onClick={() => handleMenu(2)}
         >
           <Link
-            className="link-menu"
+            className="link-menu-int"
             to="/estudantes"
             onClick={() => handleMenu(2)}
           >
             <h3>Estudantes</h3>
           </Link>
         </div>
-        <div
-          className="menu-item"
-          id="financeiro"
-          onClick={() => handleMenu(3)}
-        >
-          <Link
-            className="link-menu"
-            to="/financeiro"
-            onClick={() => handleMenu(3)}
-          >
-            <h3>Financeiro</h3>
-          </Link>
-        </div>
       </div>
-      <div className="pai-parte-inferior">
-        <div className="parte-inferior">
-          <div className="imagem-inferior">
-            <img src="./assets/vilaBrasil.png" alt="" />
-            <button className="btn-sair" onClick={handleSair}>Sair</button>
+      <div className="pai-parte-inferior-int">
+        <div className="parte-inferior-int">
+          <div className="imagem-inferior-int">
+            <img src="./assets/vilaInternacionalBranca.png" alt="" />
+            <button className="btn-sair-int" onClick={handleSair}>Sair</button>
           </div>
         </div>
       </div>
     </div>
   );
 };
-export default MenuVilaBrasil;
+export default MenuVilaInternacional;

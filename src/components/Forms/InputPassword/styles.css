@@ -11,6 +11,9 @@
     outline: none;
     transition: all 0.3s;
 }
+.inputError {
+    border: 3px solid #DC3545;
+}
 .dv-inputPassword button {
     background-color: rgba(0, 0, 0, 0);
     border: none;

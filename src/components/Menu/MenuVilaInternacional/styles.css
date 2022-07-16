@@ -1,9 +1,9 @@
-.menuVilaBrasil {
+.menuVilaInternacional {
     min-height: 100vh;
     box-sizing: border-box;
     width: 25%;
     min-width: 300px;
-    background-color: #ECD0BB;
+    background-color: #732817;
     border-radius: 0px 25px 25px 0px;
     display: flex;
     flex-direction: column;
@@ -11,21 +11,22 @@
     padding: 20px 20px 20px 50px;
 }
 
-.pai-parte-superior {
+.pai-parte-superior-int {
     width: 100%;
     background-color: #FCF9F4;
     margin-right: -20px;
 }
-.parte-superior {
+.parte-superior-int {
     padding-bottom: 3vh;
-    background-color: #ECD0BB;
+    background-color: #732817;
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    color: #fff;
 }
 
-.foto-perfil {
+.foto-perfil-int {
     width: 15vh;
     height: 15vh;
     border-radius: 5em;
@@ -33,28 +34,28 @@
     border: 4px #FFEED9 solid;
 }
 
-.nome-pessoa {
+.nome-pessoa-int {
     font-family: sans-serif;
     margin-bottom: 0px;
     text-align: center;
 }
 
-.email {
+.email-int {
     margin-top: 10px;
     font-family: sans-serif;
     font-weight: 500;
     text-align: center;
 }
-.contador h4 {
+.contador-int h4 {
     text-align: left;
     margin: 20px;
 }
-.contador {
+.contador-int {
     width: 100%;
 }
 .registradas {
     width: 50%;
-    border-right: 2px solid #000;
+    border-right: 2px solid #fff;
 }
 .confirmadas {
     width: 50%;
@@ -66,36 +67,37 @@ h5 {
     vertical-align: middle;
     font-size: 1em;
 }
-.quadro-contador {
+.quadro-contador-int {
     display: flex;
 }
 .qtd {
     text-align: center;
 }
-.lista-menu {
+.lista-menu-int {
     background-color: #FCF9F4;
     margin-right: -20px;
 }
-.menu-item{
-    background-color: #ECD0BB;
+.menu-item-int{
+    background-color: #732817;
     cursor: pointer;
 }
-.link-menu {
+.link-menu-int {
     text-decoration: none;
-    color: #000;
+    color: #fff;
 }
-.menu-item h3 {
+.menu-item-int h3 {
     font-family: sans-serif;
     padding: 5px 4vh;
     margin: 0px;
 }
-.menu-item h3:hover {
+.menu-item-int h3:hover {
     color: #FCF9F4;
 }
-.menu-item-selected h3:hover {
-    color: #ECD0BB;
+.menu-item-selected-int h3:hover {
+    color: #732817;
 }
-.menu-item-selected h3{
+.menu-item-selected-int h3{
+    color: #000;
     width: 100%;
     background-color: #FCF9F4;
     padding-top: 5px;
@@ -108,44 +110,44 @@ h5 {
 .pos-menu-item{
     border-radius: 0px 15px 0px 0px;
 }
-.pai-parte-inferior {
+.pai-parte-inferior-int {
     width: 100%;
     background-color: #FCF9F4;
     margin-right: -20px;
 }
-.parte-inferior {
-    padding-top: 4vh;
+.parte-inferior-int {
+    padding-top: 10vh;
     width: 100%;
-    background-color: #ECD0BB;
+    background-color: #732817;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
-.parte-inferior img {
+.parte-inferior-int img {
     width: 70%;
 }
-.btn-sair {
+.btn-sair-int {
     width: 50%;
     margin-left: 9%;
-    background-color: rgba(0, 0, 0, 0.085);
+    background-color: #E4DCC9;
     border-radius: 15px;
     padding: 5px;
     margin-top: 1vh;
 }
-.btn-sair:hover {
+.btn-sair-int:hover {
     background-color: rgba(0, 0, 0, 0.15);
     cursor: pointer;
 }
 
 @media (min-height: 700px) {
-    .parte-inferior {
+    .parte-inferior-int {
         padding-top: 10vh;
     }
-    .parte-superior {
+    .parte-superior-int {
         padding-bottom: 5vh;
     }
-    .menu-item h3{
+    .menu-item-int h3{
         padding: 5px 20px;
     }
 }

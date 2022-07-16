@@ -10,6 +10,9 @@
     outline: none;
     transition: all 0.3s;
 }
+.inputError {
+    border: 3px solid #DC3545;
+}
 .dv-inputText button {
     background-color: #743A26;
     border: none;

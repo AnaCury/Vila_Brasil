@@ -12,17 +12,21 @@ import "./styles.css";
 const Login = () => {
   const [email, setEmail] = React.useState("");
   const [password, setPassword] = React.useState("");
+  const [error, setError] = React.useState(false);
   const navigate = useNavigate();
 
-  const handleLogin = () => {
-    LoginSvc(email, password);
-    // verificar se autenticou
-    // se autenticou, redirecionar para /registrar-aula
-    if(isAuthenticated()) {
-      console.log("autenticou");
+  const handleLogin = async () => {
+    var login = await LoginSvc(email, password);
+    if(login){
       navigate("/registrar-aula");
+    }else {
+      setError(true);
     }
   };
+
+  useEffect(() => {
+    setError(false);
+  }, [email, password]);
 
   return (
     <div className="principal">
@@ -32,8 +36,11 @@ const Login = () => {
       <div className="container">
         <div className="form">
           <h1 className="form-title" style={{marginLeft: "-50px"}}>Boas-vindas <br />ao sistema das Vilas</h1>
-          <InputText name="email" placeholder="Digite seu e-mail" value={email} change={setEmail} reset/>
-          <InputPassword name="senha" placeholder="Digite sua senha" value={password} change={setPassword} />
+          <InputText name="email" placeholder="Digite seu e-mail" value={email} change={setEmail} reset error={error} />
+          <InputPassword name="senha" placeholder="Digite sua senha" value={password} change={setPassword} error={error} />
+          {
+            error && <h5 className="error-description">Email ou senha incorreta, tente novamente.</h5>
+          }
           <div className="rodape-form">
             <Checkbox label="Lembrar-me" name="lembrar" />
             <Link to="/recuperar-senha">Esqueci minha senha</Link>
